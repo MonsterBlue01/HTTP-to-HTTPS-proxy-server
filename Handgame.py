@@ -8,11 +8,11 @@
 
 import os
 import zipfile
+import tensorflow as tf
+import keras
 from keras.models import Sequential
 from keras.layers import Dense, Embedding, LSTM, GRU, Flatten, Dropout, Lambda
 from keras.layers.embeddings import Embedding
-import tensorflow as tf
-import keras
 
 local_zip = '/tmp/rps.zip'
 zip_ref = zipfile.Zipfile(local_zip, 'r')
