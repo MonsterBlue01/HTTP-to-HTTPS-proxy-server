@@ -1,3 +1,8 @@
+DROP SCHEMA IF EXISTS Lab1 CASCADE;
+CREATE SCHEMA Lab1;
+
+SET search_path TO Lab1;
+
 CREATE TABLE SubscriptionKinds (
     subscriptionMode CHAR(1) CHECK (subscriptionMode IN ('D', 'P', 'B')),
     subscriptionInterval INTERVAL,
